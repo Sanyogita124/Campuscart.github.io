@@ -27,13 +27,20 @@
             background-clip: text;
             -webkit-text-fill-color: transparent;
         }
+        .banner-container {
+            overflow: hidden;
+            background-color: white;
+            border-radius: 10px;
+            padding: 10px 0;
+            color: black;
+        }
+
         .scrolling-banner {
             white-space: nowrap;
-            overflow: hidden;
-            animation: scroll-left 20s linear infinite;
-        }
-        .scrolling-banner span {
             display: inline-block;
+            animation: scroll-left 20s linear infinite;
+            font-weight: 500;
+            font-size: 1rem;
             padding-left: 100%;
         }
         @keyframes scroll-left {
@@ -81,8 +88,10 @@
     </div>
 
     <!-- Banner -->
-    <div class="bg-white my-3 p-2 rounded shadow-sm scrolling-banner">
-        <span>📚 Sell your old books! | ✏️ Get stationery at best prices! | 🎓 Guide juniors & make a difference! | 💼 Post your listings now on CampusCart!</span>
+    <div class="banner-container mt-3">
+        <div class="scrolling-banner">
+                <span>📚 Sell your old books! | ✏️ Get stationery at best prices! | 🎓 Guide juniors & make a difference! | 💼 Post your listings now on CampusCart! </span>
+        </div>
     </div>
 
     <!-- Carousel and Categories -->
